@@ -9,6 +9,8 @@ Tags: child theme
 Text Domain: ericpadget
 */
 
+/* Header */
+
 header#masthead {
   background-color: #fff;
   box-shadow: none;
@@ -32,22 +34,73 @@ body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a 
   color: #006de2;
 }
 
+/* Footer */
+
+body:not(.theme-preset-active) footer#colophon {
+  font-family: 'Crimson Text', Arial, sans-serif;
+  color: #0056b3;
+  background-color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Home */
+
+.site-main.home {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.site-main.home .featured,
+.site-main.home .calendar {
+
+}
+
+/* About */
+h2.entry-title { 
+  font-size: 1.75rem;
+}
+.entry-title a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Contact */
+.site-main.contact label {
+  width: 100%;
+}
+
+.wpcf7-form > p:last-of-type {
+  text-align: center;
+}
+
+
+/* Discography */
+
 .releases-container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.releases-container .release a {
+.releases-container .release a,
+.site-main.home .featured a  {
   color: #000;
 }
 
-.releases-container .release a .release-title {
+.releases-container .release a .release-title,
+.site-main.home .featured a .release-title {
   font-size: 20px;
   font-weight: 600;
   margin: 5px 0;
 }
 
-.releases-container .release .release-date {
+.site-main.home .featured a .release-title {
+    margin: 10px 0;
+}
+
+.releases-container .release .release-date,
+.site-main.home .featured .release-date {
   font-weight: 600;
   font-size: 14px;
   margin-bottom: 5px;

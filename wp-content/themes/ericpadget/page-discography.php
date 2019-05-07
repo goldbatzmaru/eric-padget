@@ -28,7 +28,8 @@ get_header(); ?>
 		    <?php foreach( $releases as $i => $row ):
 	  		  $cover_art = $row['cover_art']['url'];
 	  		  $title = $row['title'];
-	  		  $link = $row['link'];
+			  $link_url = $row['link']['url'];
+			  $link_target = $row['link']['target'];
 	  		  $description = $row['description'];
 	  		  $release_date = $row['release_date'];
   	  		  $x++;
@@ -38,7 +39,7 @@ get_header(); ?>
     		  if($x > $max) { break; } ?>                     
     
     		  <div class="release col-sm-6 col-md-4 col-lg-3">
-	  			<a href="<?php if($link){ echo $link; }?>">
+			<a href="<?php if($link_url){ echo $link_url; }?>" <?php if($link_target):?> target="_blank"<?php endif;?>>
 				  <img src="<?php echo $cover_art; ?>"/>
 		  		  <div class="release-title">
 		    		<?php echo $title?>
