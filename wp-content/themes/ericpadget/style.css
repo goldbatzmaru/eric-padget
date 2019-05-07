@@ -11,6 +11,7 @@ Text Domain: ericpadget
 
 header#masthead {
   background-color: #fff;
+  box-shadow: none;
 }
 
 #masthead .navbar .navbar-brand .site-title {
@@ -26,6 +27,62 @@ body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
   font-weight: 600;
 }
 
-body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover {
+body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover,
+body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a {
   color: #006de2;
+}
+
+.releases-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.releases-container .release a {
+  color: #000;
+}
+
+.releases-container .release a .release-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.releases-container .release .release-date {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.releases-container .release p {
+  margin-bottom: 25px;
+}
+
+.release-pagination {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Crimson Text', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.release-pagination > * {
+  margin-right: 10px;
+}
+
+.release-pagination a {
+  color: #000;
+}
+
+.release-pagination a:hover {
+  text-decoration: none;
+}
+
+.release-pagination .current {
+  color: #006de2;
+}
+
+/* === Mobile === */
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 86, 179, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
