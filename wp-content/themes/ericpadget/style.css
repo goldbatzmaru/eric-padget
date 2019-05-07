@@ -1,0 +1,31 @@
+/*
+Theme Name: Eric Padget
+Description: WP Bootstrap Starter Child Theme
+Author: Daniel Ahrendt
+Author URI: http://example.com
+Template: wp-bootstrap-starter
+Version: 1.0.0
+Tags: child theme
+Text Domain: ericpadget
+*/
+
+header#masthead {
+  background-color: #fff;
+}
+
+#masthead .navbar .navbar-brand .site-title {
+  font-family: 'Crimson Text', Arial, sans-serif;
+  color: #0056b3;
+  font-size: 40px;
+}
+
+body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
+  color: #0056b3;
+  font-size: 20px;
+  font-family: 'Crimson Text', Arial, sans-serif;
+  font-weight: 600;
+}
+
+body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover {
+  color: #006de2;
+}
